@@ -1,0 +1,329 @@
+.contact_form_container {
+    background: var(--primary-variant-color);
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+    position: relative;
+}
+
+.contact_form_container .mediun_dot1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.contact_form_container .mediun_dot2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.contact_form_main {
+    margin: auto;
+    display: flex;
+    /* max-width: 1100px; */
+    width: 87%;
+    justify-content: space-between;
+    /* gap: 9rem; */
+}
+
+.contact_form_main .contact-left {
+    /* position: relative; */
+    width: 40%;
+}
+
+.contact-left h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: var(--white-color);  
+    margin-bottom: 2rem;  
+}
+
+.contact-left .contact-email_icon_box {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    margin-bottom: 2.7rem;
+}
+
+.contact-left .contact-email_icon_box a {
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 40px;
+    color: var(--white-color);  
+    text-decoration: none;  
+}
+
+.contact-left .dot1_box {
+    position: relative;
+}
+
+.contact-left .dot1_box img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.medium_contact_dot_box {
+    position: absolute;
+    left: -2rem;
+    z-index: 1;
+    bottom: -2.3rem;
+}
+
+.contact-right {
+    width: 48%;
+}
+
+.contact-right h3 {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 57px;
+    text-align: left;
+    color: var(--white-color);   
+    margin-bottom: 2rem; 
+}
+
+.contact-right .form-group1 label {
+    display: block;
+    color: var(--white-color);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 17.24px;
+    margin-bottom: 0.3rem;
+        
+}
+
+.contact-right .form-group1 label span {
+    color: var(--red-color);
+}
+
+.contact-right .form-group1 input {
+    border: none;
+    background: none;
+    border-bottom: 1px solid var(--white-color);
+    outline: none;
+    width: 100%;
+    font-size: 18px;
+    color: var(--white-color);
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+}
+
+.form-group_name_box {
+    /* display: flex; */
+    margin-top: 3rem;
+    /* align-items: center;
+    flex-direction: row; */
+    /* flex-wrap: nowrap; */
+    /* gap: 2rem; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.form-group_name_box .first_name_box label,
+.form-group_name_box .last_name_box label {
+    display: block;
+    color: var(--white-color);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 17.24px;
+    margin-bottom: 0.3rem;
+}
+
+
+.form-group_name_box .first_name_box label span,
+.form-group_name_box .last_name_box label span {
+   color: var(--red-color);
+}
+
+.form-group_name_box .last_name_box {
+    width: 100%;
+}
+
+.form-group_name_box .first_name_box input,
+.form-group_name_box .last_name_box input {
+    border: none;
+    background: none;
+    border-bottom: 1px solid var(--white-color);
+    outline: none;
+    width: 100%;
+    font-size: 18px;
+    color: var(--white-color);
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+}
+
+.contact-right .form-group2 label {
+    display: block;
+    color: var(--white-color);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 17.24px;
+    margin-bottom: 0.7rem;
+}
+
+.contact-right .form-group2 {
+    margin-top: 3.5rem;
+}
+
+.contact-right .form-group2 textarea {
+    border: none;
+    background: none;
+    border-bottom: 1px solid var(--white-color);
+    outline: none;
+    width: 100%;
+    font-size: 18px;
+    color: var(--white-color);
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    resize: none;
+    height: 30px;
+}
+
+.contact-right .form-group2 textarea::-webkit-scrollbar {
+    display: none;
+}
+
+.form-group3 {
+    margin-top: 3rem;
+    border-bottom: 1px solid var(--white-color);
+    padding-bottom: 3rem;
+}
+
+.form-group3 label {
+    display: block;
+    color: var(--white-color);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 17.24px;
+    cursor: pointer;
+}
+
+.form-group3 input {
+    display: none;
+}
+
+.send_button {
+    border-radius: var(--border-radius-0-4);
+    background: var(--white-color);
+    border: none;
+    padding: 0.7rem 2rem;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 21px;
+    color: var(--primary-color);
+    margin-top: 2.5rem;
+    cursor: pointer;
+}
+
+
+
+/* MEDIA STYLES GOES HERE */
+@media (max-width: 1024px) {
+    .contact-right .form-group2 {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact_form_main {
+        flex-direction: column;
+        width: 100%;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .contact_form_main .contact-left {
+        width: 100%;
+    }
+
+    .contact-left h2 {
+        font-size: 38px;
+        text-align: center;
+    }
+
+    .contact-right {
+        width: 100%;
+        margin-top: 3.5rem;
+    }
+
+    .contact-right h3 {
+        text-align: center; 
+    }
+    
+
+}
+
+
+@media (max-width: 425px) {
+    .contact_form_container .mediun_dot1 img {
+      width: 90px;
+    }
+    
+    .contact_form_container .mediun_dot2 img {
+       width: 90px;
+    }
+
+    .form-group_name_box {
+        grid-template-columns: 1fr
+    }
+
+    .contact-left h2 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    .contact-left .contact-email_icon_box a {
+        font-size: 20px;
+    }
+
+    .medium_contact_dot_box {
+        bottom: -1rem;
+    }
+
+    .medium_contact_dot_box img {
+        /* width: 20px; */
+        height: 90px;
+    }
+
+    .contact-right h3 {
+        font-size: 27px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 375px) {
+    .contact-left h2 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .contact-left .contact-email_icon_box {
+        gap: 0.5rem;
+    }
+
+    .contact-left .contact-email_icon_box a {
+        font-size: 17px;
+    }
+
+    .contact-right h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .send_button {
+        padding: 0.7rem 1.3rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .contact-left .contact-email_icon_box a {
+        font-size: 14px;
+    }
+}

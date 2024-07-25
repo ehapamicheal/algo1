@@ -1,13 +1,639 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  /* color */
+  --light-dark: #323232;
+  --primary-color: #3776B8;
+  --secondary-dark_blue: #1574D1;
+  --primary-variant-color: #1E83E6;
+  --color-active: #00B0F0;
+  --white-color: #FFFFFF;
+  --gray-background: #F6F7FB;
+  --green-color: #559d06;
+  --footer-color: #001538;
+  --red-color: #ff0000;
+  --black: #000000;
+  --ptag-color: #231F20;
+  --d9-color: #D9D9D9;
+  /* --blue-light-color: #F6F7FB; */
+
+  /* border radius */
+  --border-radius-0-4: 0.4rem;
+  --border-radius-1: 1rem;
+  --border-radius-5: 5rem;
+  --border-radius-2: 2rem;
+
+
+  /* transition */
+  --transition-500: all 500ms ease;
+  --transition-300: all 300ms ease;
+  --transition-200: all 200ms ease;
+
+  /* width */
+  --container-width-lg: 90%;
+  /* --container-width-md: 90%; */
+
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: var(--container-width-lg);
+  max-width: 1920px;
+  margin-inline: auto;
+}
+
+.containers {
+  width: 87%;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.container_1 {
+  margin: auto;
+  width: 87%;
+}
+
+.container_main {
+  width: 85%;
+  margin: auto;
+}
+
+.text_bold_secondary-color {
+  font-weight: 700;
+}
+
+.bold_text1 {
+  font-weight: 700;
+}
+
+.text_bold_green {
+  font-weight: 700;
+}
+
+.text_font_weight_700 {
+  font-weight: 700;
+}
+
+.container_2 {
+  max-width: 940px;
+}
+
+.btn {
+  border-radius: var(--border-radius-0-4);
+  background: var(--primary-color);
+  padding: 0.7rem 2rem;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 21px;
+  color: var(--white-color);
+  transition: var(--transition-300);
+  text-decoration: none;
+}
+
+.btn:hover {
+  opacity: .9;
+}
+
+.btn_white {
+  border-radius: var(--border-radius-0-4);
+  background: var(--white-color);
+  padding: 0.7rem 2rem;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 21px;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+
+
+
+
+/* CENTRIC BUSINESS */
+.centric_business_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-variant-color);
+  position: relative;
+  margin-top: 4rem;
+  height: 100%;
+  padding-bottom: 2rem;
+}
+
+.centric_bg_box1 {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.centric_bg_box2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.centric_business_main {
+  margin-top: 4rem;
+}
+
+.centric_business_main .centric_business_top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.centric_business_top .centric_business_left {
+  display: flex;
+  width: 55%;
+  gap: 1rem;
+}
+
+.centric_business_top .centric_business_left h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: px;
+  color: var(--white-color);
+}
+
+.centric_business_top .centric_business_right {
+  width: 55%;
+}
+
+.centric_business_top .centric_business_right .p1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  text-align: left;
+  color: var(--white-color);    
+}
+
+.centric_business_top .centric_business_right .p2 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  text-align: left;
+  color: var(--white-color);  
+  margin-top: 2rem;  
+}
+
+.centric_bottom_box {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.centric_bottom_box p .img1 {
+  margin-right: 1rem;
+}
+
+.centric_bottom_box p .img2 {
+  margin-left: 1rem;
+}
+
+.centric_bottom_box p .semi_span {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 40px;
+  text-align: center;
+  color: var(--white-color);  
+}
+
+.trade-footer_bo {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.trade-footer_bo p {
+  font-family: "Ubuntu", sans-serif; 
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 40px;
+  color: var(--white-color);    
+}
+
+
+
+/* BANNERS */
+.banner {
+  /* position: relative; */
+  width: 100%;
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  color: white;
+  align-items: flex-end;
+}
+
+.banner-content {
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  width: 50%;
+}
+
+.banner h1 {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 72px;
+  color: var(--white-color);
+}
+
+
+
+/* FAQS SECTION STARTS HERE */
+.lot_solution_container {
+  background: var(--gray-background);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  position: relative;
+}
+
+.lot_solution_container .lot_dot1 {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.lot_solution_container .lot_solution_main {
+  width: 85%;
+  margin: auto;
+}
+
+.lot_solution_main h2 {
+  font-size: 33px;
+  font-weight: 700;
+  line-height: 50px;
+  text-align: left;
+  color: var(--light-dark); 
+  padding-bottom: 2rem;
+}
+
+.lot_solution_main h2 span {
+  color: var(--primary-variant-color);
+}
+
+.lot_solution_main .lot_solution_contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 86%;
+}
+
+.lot_solution_contents .faq_box_content {
+  cursor: pointer;
+  margin-top: 2rem;
+  border-bottom: 1px solid var(--ptag-color);
+  padding-bottom: 1.7rem;
+}
+
+.lot_solution_contents .faq_box_content:first-child {
+  border-top: 1px solid var(--primary-variant-color);
+  padding-top: 2rem;
+}
+
+.faq_box_content .faq_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.faq_box .faq_flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.faq_box .faq_flex h4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 50px;
+  color: var(--light-dark);  
+}
+
+.faq_box_content .faq_box button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.faq_box_content .faq_box button svg {
+  font-size: 1.4rem;
+}
+
+.faq_box_content p {
+  padding-top: 1rem;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: left;
+  color: var(--ptag-color);
+  width: 93%;  
+}
+
+.lot_solution_container .lot_dot2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.lot_solution_container .lot_dot2 img {
+  width: 90px;
+}
+/* FAQS SECTION ENDS HERE */
+
+
+
+
+
+/* FOOTER SECTION */
+.footer_overall_container {
+  background-color: var( --footer-color);
+  position: relative;
+  height: 100%;
+  padding-bottom: 1rem;
+}
+
+.footer_overall_container .footer_dot1 {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.footer_main {
+  padding-top: 2.7rem;
+}
+
+.footer_main .footer_text_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.footer_main .footer_text_box .footer_links  {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.footer_links .footer_link {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28.8px;
+  color: var(--white-color); 
+  text-decoration: none; 
+  transition: var(--transition-200);
+}
+
+.footer_links .footer_link:hover {
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+
+.footer_hr {
+  max-width: 94%;
+  margin: auto;
+  border: none;
+  background-color: var(--light-dark);
+  height: 1px;
+}
+
+.footer_bottom {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.footer_bottom P {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  color: var(--white-color);  
+}
+
+.footer_overall_container .footer_dot2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+
+
+
+
+@media (max-width: 1024px) {
+  .container_main {
+    width: 90%;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .containers {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .container_2 {
+    /* max-width: 940px; */
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  /* BANNERS */
+  .banner {
+    height: 70vh;
+  }
+
+  .banner-content {
+    width: 100%;
+    text-align: left;
+  }
+
+  .banner h1 {
+    font-size: 40px;
+    line-height: 59px; 
+  }
+
+
+  /* centric */
+  .centric_bg_box1,
+  .centric_bg_box2 {
+    display: none;
+  }
+
+  .centric_business_main .centric_business_top {
+    flex-direction: column;
+  }
+  
+  .centric_business_top .centric_business_left {
+    width: 100%;
+  }
+
+  .centric_business_top .centric_business_right {
+    width: 100%;
+    margin-top: 1rem;
+  } 
+
+  
+  /* faq */
+  .lot_solution_container .lot_solution_main {
+    width: 90%;
+  }
+  
+  .lot_solution_main .lot_solution_contents {
+    width: 100%;
+  }
+
+  .lot_solution_container .lot_dot1,
+  .lot_solution_container .lot_dot2 {
+    display: none;
+  }
+
+
+  
+}
+
+
+@media (max-width: 425px) {
+  .btn {
+    font-size: 14px;
+  }
+
+  .banner {
+    height: 50vh;
+  }
+
+  .banner h1 {
+    font-size: 33px;
+    line-height: 50px;
+  }
+
+  .container_main {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* centric */
+  .centric_business_top .centric_business_left h2 {
+    font-size: 29px;
+  }
+
+  .centric_business_top .centric_business_right .p1,
+  .centric_business_top .centric_business_right .p2 {
+    font-size: 16px;   
+  }
+
+  .centric_bottom_box p .img1,
+  .centric_bottom_box p .img2  {
+    width: 20px;
+  }
+  
+  .centric_bottom_box p .semi_span {
+    font-size: 16px;
+  }
+  
+  .trade-footer_bo p { 
+    font-size: 16px;    
+  }
+
+  /* faq */
+  .lot_solution_container .lot_solution_main {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .lot_solution_main h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .faq_box .faq_flex h4 {
+    font-size: 22px;
+  }
+
+  /* footer */
+  .footer_overall_container .footer_dot1 img {
+    width: 100px;
+  }
+
+  .footer_overall_container .footer_dot2 img {
+    width: 90px;
+  }
+
+  .footer_main .footer_text_box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer_links {
+    margin-top: 2rem;
+  }
+
+  .footer_links .footer_link {
+    font-size: 15px;
+    /* line-height: 28.8px; */
+  }
+}
+
+
+@media (max-width: 375px) {
+  .btn {
+    padding: 0.7rem 1rem;
+  }
+
+  .banner h1 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .centric_business_top .centric_business_left h2 {
+    font-size: 23px;
+  }
+
+  .centric_business_top .centric_business_right .p1,
+  .centric_business_top .centric_business_right .p2 {
+    font-size: 15px;   
+  }
+  
+  .centric_bottom_box p .semi_span {
+    font-size: 15px;
+  }
+  
+  .trade-footer_bo p { 
+    font-size: 15px;    
+  }
+}
+
+@media (max-width: 320px) {
+  /* faq */
+  .lot_solution_main h2 {
+    font-size: 25px;
+  }
+
+  .faq_box .faq_flex h4 {
+    font-size: 20px;
+  }
+}
+

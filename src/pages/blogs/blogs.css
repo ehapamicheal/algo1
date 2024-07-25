@@ -1,0 +1,262 @@
+.blogs_overall_container {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 100%;
+}
+
+.blogs_main {
+   width: 87%;
+   margin: auto;
+}
+
+.blogs_main h2 {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 90px;
+    text-align: center;    
+}
+
+.blogs_main h2 span {
+    color: var(--primary-variant-color);
+}
+
+.blogs_main .blogs_content_box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem 3rem;
+    margin-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.blogs_content_box .blogs_box {
+    background-color: var(--gray-background);
+    border-radius: var(--border-radius-0-4);
+    width: 100%;
+}
+
+.blogs_content_box .blogs_box img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.blogs_content_box .blogs_box .blog_text_box {
+    padding: 1rem 2rem 2rem;
+}
+
+.blogs_box .blog_text_box h4 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 36.4px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: var(--light-dark);    
+}
+
+.blogs_box .blog_text_box p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: var(--ptag-color);    
+}
+
+.time_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.time_box span {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 40px;
+    color: var(--ptag-color);    
+}
+
+.show_more_box {
+    text-align: center;
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.show_more_box .show_btn {
+    border-radius: var(--border-radius-0-4);
+    background: var(--primary-color);
+    padding: 0.7rem 2rem;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 21px;
+    color: var(--white-color);
+    transition: var(--transition-300);
+    border: none;
+    cursor: pointer;
+}
+
+.show_more_box .show_btn:hover {
+    opacity: .9;
+}
+
+
+
+
+
+
+/* BLOG READ MORE SECTION STARTS HERE */
+.blog_read_more_overall_container {
+    margin-top: 7rem;
+}
+
+.blog_read_more_main {
+    width: 87%;
+    margin: 1rem auto 1rem;
+    padding-bottom: 2rem;
+}
+
+.blog_read_more_top_head {
+    text-align: center;
+}
+
+.blog_read_more_top_head p {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 40px;
+    color: var(--ptag-color);    
+}
+
+.blog_read_more_top_head h3 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 56px;
+    color: var(--light-dark);  
+    margin-bottom: 1.5rem;  
+}
+
+.blog_read_more_top_head h3 span {
+    color: var(--primary-color);
+}
+
+.blog_read_more_content img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.read_more_text_content {
+    width: 80%;
+    margin: 2rem auto 0;
+}
+
+.read_more_text_content p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0.02em;
+    text-align: left;    
+}
+
+.read_more_text_content .p_2 {
+    margin-top: 2rem;
+}
+
+.text_box2 {
+    margin-top: 2rem;
+}
+
+.text_box2 h4 {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 36.4px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: var(--primary-color);    
+}
+
+.text_box2 .p_but {
+    margin: 1rem 0;
+}
+
+.text_box2 img {
+    width: 100%;
+    object-fit: cover;
+}
+/* BLOG READ MORE SECTION ENDS HERE */
+
+
+
+
+
+/* MEDIA STYLES STARTS HERE */
+@media (max-width: 768px) {
+    .blogs_main .blogs_content_box {
+        grid-template-columns: 1fr;      
+    }
+}
+
+@media (max-width: 425px) {
+    .blogs_content_box .blogs_box .blog_text_box {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .blogs_main h2 {
+        font-size: 25px;
+    }
+}
+
+
+
+/* CODE FOR THE READ MORE CONTENTS PAGE */
+/* READ MORE PAGE MEDIA STYLES */
+@media (max-width: 768px) {
+    .blog_read_more_top_head h3 {
+        line-height: 50px;
+    }
+
+    .read_more_text_content {
+        width: 90%;
+    }
+}
+
+@media (max-width: 425px) {
+    .blog_read_more_top_head h3 {
+        font-size: 27px;
+        line-height: 42px;
+    }
+
+    .read_more_text_content p {
+        font-size: 17px;
+    }
+
+    .text_box2 h4 {
+        font-size: 23px;
+    }
+
+    .text_box2 p {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 375px) {
+    .blog_read_more_top_head h3 {
+        font-size: 24px;
+        line-height: 42px;
+    }
+
+    .read_more_text_content p {
+        font-size: 16px;
+    }
+
+    .text_box2 h4 {
+        font-size: 21px;
+    }
+
+    .text_box2 p {
+        font-size: 16px;
+    }
+}
