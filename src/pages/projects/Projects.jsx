@@ -84,7 +84,7 @@ const Projects = () => {
   return (
    <>
     {/* ARTIFICIAL CODES */}
-    {/* <div className="artificial_overall_container">
+    <div className="artificial_overall_container">
       <div className="artificial_main">
         <div className="artificial_content">
           <div className="artificial_left_side">
@@ -99,9 +99,9 @@ const Projects = () => {
           </div>
         </div>
       </div>
-    </div> */}
+    </div>
 
-    {/* <div className="gains_overall_container">
+    <div className="gains_overall_container">
       <div className="gains_main">
         <div className="gains_top">
           <h2>Gain a competitive advantage with AI and ML applications</h2>
@@ -163,9 +163,9 @@ const Projects = () => {
         </div>
 
       </div>
-    </div> */}
+    </div> 
 
-    {/* <div className="accordion_container">
+    <div className="accordion_container">
       <div className="accordion_dot_box1">
         <img src={mediumDot} alt="" />
       </div>
@@ -196,9 +196,9 @@ const Projects = () => {
       <div className="accordion_dot_box2">
         <img src={mediumDot} alt="" />
       </div>
-    </div> */}
+    </div>
 
-    {/* <div className="intelligence_container">
+    <div className="intelligence_container">
       <div className="intelligence_main">
         <div className="intelligence_content">
           <div className="intelligence_left_side">
@@ -251,9 +251,9 @@ const Projects = () => {
       <div className="intelligence_dot_box">
         <img src={mediumDot} alt="" />
       </div>
-    </div> */}
+    </div>
 
-    {/* <TalkProject/>     */}
+    <TalkProject/>    
 
     
     {/*CODE FOR THE ROBOTICES SECTION  */}
@@ -414,7 +414,7 @@ const Projects = () => {
 
 
     {/* CRYPTO CODE SECTION USING FIRST ROBOTICS DIV STYLING  */}
-    <div className="crypto_container">
+    {/* <div className="crypto_container">
       <div className="crypto_main">
         <div className="crypto_content">
           <div className="crypto_left_side">
@@ -508,7 +508,7 @@ const Projects = () => {
       </div>
     </div>
 
-    <TalkProject/>
+    <TalkProject/> */}
 
     
 

@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import "./contactform.css";
-// import "./contact.css"
 import maskImage4 from "../images/Mask group 4.png";
 import EmailSvg from "../svgs/email 1.svg";
 import MediumDot from "../images/medium dot.png"
