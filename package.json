@@ -1,7 +1,7 @@
 {
   "name": "algo",
   "version": "0.1.0",
-  "homepage": "https://github.com/ehapamicheal/algo1",
+  "homepage": "https://github.io/ehapamicheal/algo1",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
